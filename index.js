@@ -44,6 +44,7 @@ const init = async function() {
     const events = await readdirSync(`./events/`)
     console.log(info, `Loading ${events.length} events.`)
     events.forEach(f => {
+        if (name == `t`) return;
         const name = f.split('.')[0];
         console.log(success, `Loading ${name}`)
         const event = require(`./events/${f}`)
@@ -67,5 +68,6 @@ client.on(`guildMemberRemove`, function(member) {
     if (!chan) return;
     chan.send(`${member}(${member.user.tag}) **Left**`)
 })
+
 
 init()
