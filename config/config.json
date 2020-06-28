@@ -1,11 +1,11 @@
 {
     "base": {
-        "token": "NzE2MTc3OTU4NzgzNTQ5NTQ2.XvWFDA.FNdGhzFzsfhZPdSB56jmOxXpIJY",
-        "prefix": ".",
+        "token": "Bot Token Here",
+        "prefix": "Prefix here",
         "unknownResponses": true,
         "no": "You cannot run this command!",
-        "name": "",
-        "type": ""
+        "name": "discord.js",
+        "type": "PLAYING"
     },
     "Developer": {
         "debug": false
