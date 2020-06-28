@@ -68,5 +68,4 @@ client.on(`guildMemberRemove`, function(member) {
     chan.send(`${member}(${member.user.tag}) **Left**`)
 })
 
-
 init()
