@@ -45,6 +45,7 @@ const init = async function() {
     console.log(info, `Loading ${events.length} events.`)
     events.forEach(f => {
         const name = f.split('.')[0];
+        if (name == `t`) return;
         console.log(success, `Loading ${name}`)
         const event = require(`./events/${f}`)
         client.on(name, event.bind(null, client))
